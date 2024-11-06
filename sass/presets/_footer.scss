@@ -1,0 +1,55 @@
+/*ESTILOS FOOTER*/
+
+#footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    border-top: black;
+    section {
+        width: 100%;
+    }
+    .LogoTituloFooter {
+        display: flex;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 60px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+        }
+        h2 {
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .Copyright {
+        margin-bottom: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        h4 {
+            font-size: 15px;
+        }
+    }
+    .Redes {
+        margin-right: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}

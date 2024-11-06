@@ -1,0 +1,29 @@
+
+/*LOGO Y TITULO NAVBAR*/
+
+.LogoTitulo {
+    display: flex;
+}
+
+.LogoTitulo img {
+    width: 65px;
+    height: 65px;
+}
+
+.LogoTitulo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.LogoTitulo h1 {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+.LogoTitulo h2 {
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

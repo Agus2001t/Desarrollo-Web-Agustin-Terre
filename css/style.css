@@ -29,33 +29,6 @@ li {
   padding: 0 70px;
 }
 
-/*ESTILOS BARRA DE NAVEGACIÓN*/
-#header {
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  height: 70px;
-}
-
-#navbar {
-  display: flex;
-  align-items: center;
-  height: 70px;
-  z-index: 10;
-  border: solid 2px;
-}
-
-/*ENLACES NAVBAR*/
-#navbar ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-#navbar li {
-  font-family: fantasy;
-}
-
 /*LOGO Y TITULO NAVBAR*/
 .LogoTitulo {
   display: flex;
@@ -93,16 +66,14 @@ li {
   min-height: 100vh;
   display: flex;
 }
-
-.ParrafoMain {
+#main .ParrafoMain {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 50px;
   padding-top: 50px;
 }
-
-.ParrafoMain p {
+#main .ParrafoMain p {
   color: white;
   margin-bottom: 30px;
   font-size: 20px;
@@ -119,7 +90,6 @@ li {
   display: flex;
   justify-content: space-around;
 }
-
 .ParteInferiorMain li {
   padding: 50px;
   margin: 0 10px;
@@ -133,6 +103,153 @@ li {
   align-items: center;
 }
 
+/*MAIN CON GRILLAS PLAN NUTRICIONAL - RUTINAS - SEDES*/
+#mainPlan, #mainRutinas, #mainSedes {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+#mainPlan .GrillasMain, #mainRutinas .GrillasMain, #mainSedes .GrillasMain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 60px;
+  column-gap: 20px;
+}
+#mainPlan .GrillasMain .ImagenAlimentos, #mainRutinas .GrillasMain .ImagenAlimentos, #mainSedes .GrillasMain .ImagenAlimentos {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-image: url(../images/comida.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mainPlan .GrillasMain .TextoAlimentos, #mainRutinas .GrillasMain .TextoAlimentos, #mainSedes .GrillasMain .TextoAlimentos {
+  padding: 0 50px;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+  align-content: center;
+}
+#mainPlan .GrillasMain .TextoAlimentos p, #mainRutinas .GrillasMain .TextoAlimentos p, #mainSedes .GrillasMain .TextoAlimentos p {
+  color: white;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: fit-content;
+}
+#mainPlan .GrillasMain .Objetivo1, #mainPlan .GrillasMain .Objetivo2, #mainPlan .GrillasMain .Objetivo3, #mainRutinas .GrillasMain .Objetivo1, #mainRutinas .GrillasMain .Objetivo2, #mainRutinas .GrillasMain .Objetivo3, #mainSedes .GrillasMain .Objetivo1, #mainSedes .GrillasMain .Objetivo2, #mainSedes .GrillasMain .Objetivo3 {
+  text-align: center;
+}
+#mainPlan .GrillasMain .Objetivo1 p, #mainPlan .GrillasMain .Objetivo2 p, #mainPlan .GrillasMain .Objetivo3 p, #mainRutinas .GrillasMain .Objetivo1 p, #mainRutinas .GrillasMain .Objetivo2 p, #mainRutinas .GrillasMain .Objetivo3 p, #mainSedes .GrillasMain .Objetivo1 p, #mainSedes .GrillasMain .Objetivo2 p, #mainSedes .GrillasMain .Objetivo3 p {
+  color: white;
+  padding: 40px 20px;
+  font-size: 17px;
+}
+#mainPlan .GrillasMain .Objetivo1, #mainRutinas .GrillasMain .Objetivo1, #mainSedes .GrillasMain .Objetivo1 {
+  background-color: black;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#mainPlan .GrillasMain .Objetivo2, #mainRutinas .GrillasMain .Objetivo2, #mainSedes .GrillasMain .Objetivo2 {
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+#mainPlan .GrillasMain .Objetivo3, #mainRutinas .GrillasMain .Objetivo3, #mainSedes .GrillasMain .Objetivo3 {
+  background-color: black;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+#mainPlan .GrillasMain h1, #mainRutinas .GrillasMain h1, #mainSedes .GrillasMain h1 {
+  border: solid 2px black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: green;
+}
+#mainPlan .GrillasMain .ImagenRutina, #mainRutinas .GrillasMain .ImagenRutina, #mainSedes .GrillasMain .ImagenRutina {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-image: url(../images/rutinafondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mainPlan .GrillasMain .TextoRutina, #mainRutinas .GrillasMain .TextoRutina, #mainSedes .GrillasMain .TextoRutina {
+  padding: 0 50px;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+  align-content: center;
+}
+#mainPlan .GrillasMain .TextoRutina p, #mainRutinas .GrillasMain .TextoRutina p, #mainSedes .GrillasMain .TextoRutina p {
+  color: white;
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: fit-content;
+}
+#mainPlan .GrillasSedes, #mainRutinas .GrillasSedes, #mainSedes .GrillasSedes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 60px;
+  column-gap: 20px;
+}
+#mainPlan .GrillasSedes img, #mainRutinas .GrillasSedes img, #mainSedes .GrillasSedes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#mainPlan .GrillasSedes .imagen1, #mainRutinas .GrillasSedes .imagen1, #mainSedes .GrillasSedes .imagen1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#mainPlan .GrillasSedes .imagen2, #mainRutinas .GrillasSedes .imagen2, #mainSedes .GrillasSedes .imagen2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#mainPlan .GrillasSedes .imagen3, #mainRutinas .GrillasSedes .imagen3, #mainSedes .GrillasSedes .imagen3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+#mainPlan .GrillasSedes .imagen4, #mainRutinas .GrillasSedes .imagen4, #mainSedes .GrillasSedes .imagen4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#mainPlan .GrillasSedes .imagen5, #mainRutinas .GrillasSedes .imagen5, #mainSedes .GrillasSedes .imagen5 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+#mainPlan .GrillasSedes .imagen6, #mainRutinas .GrillasSedes .imagen6, #mainSedes .GrillasSedes .imagen6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+/*MAIN AGENDAR TURNO*/
+#mainAgendar {
+  background-color: rgb(151, 150, 150);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  padding: 50px 200px;
+}
+#mainAgendar div {
+  display: flex;
+  justify-content: center;
+}
+#mainAgendar div h2 {
+  color: white;
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  max-width: fit-content;
+  border-radius: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
 /*ESTILOS FOOTER*/
 #footer {
   width: 100%;
@@ -142,217 +259,50 @@ li {
   display: flex;
   border-top: black;
 }
-
 #footer section {
   width: 100%;
 }
-
-/*LOGO Y TITULOS FOOTER*/
-.LogoTituloFooter {
+#footer .LogoTituloFooter {
   display: flex;
 }
-
-.LogoTituloFooter div {
+#footer .LogoTituloFooter div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-.LogoTituloFooter h1 {
+#footer .LogoTituloFooter h1 {
   font-size: 60px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-style: italic;
 }
-
-.LogoTituloFooter h2 {
+#footer .LogoTituloFooter h2 {
   font-size: 30px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-
-.LogoTituloFooter img {
+#footer .LogoTituloFooter img {
   width: 200px;
   height: 200px;
 }
-
-/*COPYRIGHT*/
-.Copyright {
+#footer .Copyright {
   margin-bottom: 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
-
-.Copyright h4 {
+#footer .Copyright h4 {
   font-size: 15px;
 }
-
-/*REDES*/
-.Redes {
+#footer .Redes {
   margin-right: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-.Redes img {
+#footer .Redes img {
   width: 70px;
   height: 70px;
-}
-
-/*MAIN CON GRILLAS PLAN NUTRICIONAL - RUTINAS*/
-#mainPlan, #mainRutinas, #mainSedes {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-}
-
-.GrillasMain {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  row-gap: 60px;
-  column-gap: 20px;
-}
-
-.ImagenAlimentos {
-  grid-column: 1/4;
-  grid-row: 1/2;
-  background-image: url(../images/comida.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*TEXTO DESCRIPCION - PLAN NUTRICIONAL*/
-.TextoAlimentos {
-  padding: 0 50px;
-  grid-column: 1/3;
-  grid-row: 1/2;
-  text-align: center;
-  align-content: center;
-}
-
-.TextoAlimentos p {
-  color: white;
-  font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: oblique;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  width: fit-content;
-}
-
-/*OBJETIVOS*/
-.Objetivo1 {
-  background-color: black;
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.Objetivo2 {
-  background-color: black;
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.Objetivo3 {
-  background-color: black;
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-.Objetivo1, .Objetivo2, .Objetivo3 {
-  text-align: center;
-}
-
-.GrillasMain h1 {
-  border: solid 2px black;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: green;
-}
-
-.ObjetivosTexto {
-  color: white;
-  padding: 40px 20px;
-  font-size: 17px;
-}
-
-/*ESTILOS RUTINAS*/
-.ImagenRutina {
-  grid-column: 1/4;
-  grid-row: 1/2;
-  background-image: url(../images/rutinafondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.TextoRutina {
-  padding: 0 50px;
-  grid-column: 1/3;
-  grid-row: 1/2;
-  text-align: center;
-  align-content: center;
-}
-
-.TextoRutina p {
-  color: white;
-  font-size: 22px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: oblique;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  width: fit-content;
-}
-
-/*ESTILOS NUESTRAS SEDES*/
-#mainSedes {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.GrillasSedes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  row-gap: 60px;
-  column-gap: 20px;
-}
-
-.GrillasSedes img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.imagen1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.imagen2 {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-
-.imagen3 {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-
-.imagen4 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.imagen5 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.imagen6 {
-  grid-column: 3/4;
-  grid-row: 2/3;
 }
 
 /*DISEÑOS RESPONSIVE - INICIO*/
@@ -366,74 +316,113 @@ li {
     width: 80%;
     justify-content: center;
   }
-  .LogoTituloFooter {
+  #footer .LogoTituloFooter {
     flex-direction: column;
     align-items: center;
   }
-  .LogoTituloFooter img {
+  #footer .LogoTituloFooter img {
     width: 150px;
     height: 150px;
   }
-  .LogoTituloFooter h1 {
+  #footer .LogoTituloFooter h1 {
     font-size: 40px;
   }
-  .LogoTituloFooter h2 {
+  #footer .LogoTituloFooter h2 {
     font-size: 20px;
   }
-  .Copyright {
+  #footer .Copyright {
     margin-bottom: 0;
     align-items: center;
   }
-  .Copyright h3 {
+  #footer .Copyright h3 {
     font-size: 25px;
   }
-  .Copyright h4 {
+  #footer .Copyright h4 {
     font-size: 12px;
   }
 }
 @media (max-width: 690px) {
-  .LogoTituloFooter h1 {
+  #footer .LogoTituloFooter h1 {
     font-size: 30px;
   }
-  .LogoTituloFooter h2 {
+  #footer .LogoTituloFooter h2 {
     font-size: 15px;
   }
-  .LogoTituloFooter img {
+  #footer .LogoTituloFooter img {
     width: 100px;
     height: 100px;
   }
-  .Copyright h3 {
+  #footer .Copyright h3 {
     font-size: 14px;
   }
-  .Copyright h4 {
+  #footer .Copyright h4 {
     font-size: 11px;
   }
-  .Redes {
+  #footer .Redes {
     flex-direction: column;
   }
-  .Redes img {
+  #footer .Redes img {
     width: 40px;
     height: 40px;
   }
 }
-/*DISEÑOS RESPONSIVE - PLAN NUTRICIONAL*/
+/*DISEÑOS RESPONSIVE - PLAN NUTRICIONAL - RUTINAS*/
 @media (max-width: 770px) {
-  .Objetivo1, .Objetivo2, .Objetivo3 {
+  #mainPlan .GrillasMain, #mainRutinas .GrillasMain {
+    grid-template-rows: 1fr;
+  }
+  #mainPlan .GrillasMain h1, #mainRutinas .GrillasMain h1 {
+    font-size: 24px;
+  }
+  #mainPlan .GrillasMain .Objetivo1, #mainPlan .GrillasMain .Objetivo2, #mainPlan .GrillasMain .Objetivo3, #mainRutinas .GrillasMain .Objetivo1, #mainRutinas .GrillasMain .Objetivo2, #mainRutinas .GrillasMain .Objetivo3 {
     grid-column: 1/-1;
     grid-row: auto;
   }
-  .Objetivo1 {
-    background-color: black;
-  }
-  .ObjetivosTexto {
+  #mainPlan .GrillasMain .Objetivo1 p, #mainPlan .GrillasMain .Objetivo2 p, #mainPlan .GrillasMain .Objetivo3 p, #mainRutinas .GrillasMain .Objetivo1 p, #mainRutinas .GrillasMain .Objetivo2 p, #mainRutinas .GrillasMain .Objetivo3 p {
     padding: 20px 10px;
     font-size: 15px;
   }
-  .GrillasMain {
-    grid-template-rows: 1fr;
+}
+/*DISEÑOS RESPONSIVE - NUESTRAS SEDES*/
+@media (max-width: 770px) {
+  #mainSedes .GrillasSedes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
-  .GrillasMain h1 {
-    font-size: 24px;
+  #mainSedes .GrillasSedes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #mainSedes .GrillasSedes .imagen1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #mainSedes .GrillasSedes .imagen2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #mainSedes .GrillasSedes .imagen3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #mainSedes .GrillasSedes .imagen4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #mainSedes .GrillasSedes .imagen5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #mainSedes .GrillasSedes .imagen6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+/*DISEÑOS RESPONSIVE - AGENDAR TURNO*/
+@media (max-width: 750px) {
+  #mainAgendar {
+    padding: 50px 100px;
   }
 }
 
