@@ -21,7 +21,8 @@ li {
 #body {
   display: flex;
   flex-direction: column;
-  max-width: 1400px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 #main {
@@ -37,6 +38,7 @@ li {
 .LogoTitulo img {
   width: 65px;
   height: 65px;
+  animation: giro 7s infinite linear;
 }
 
 .LogoTitulo div {
@@ -57,6 +59,20 @@ li {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+/*ANIMACION*/
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*HICE UNO PARA MOSTRAR QUE SE ENTENDIO*/
+/*HICE UNA PARA MOSTRAR QUE SE ENTENDIO*/
 /*ESTILOS CONTENIDO*/
 #main {
   background-image: url(../images/logoindex.jpg);
@@ -74,8 +90,8 @@ li {
   padding-top: 50px;
 }
 #main .ParrafoMain p {
-  color: white;
   margin-bottom: 30px;
+  color: white;
   font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: oblique;
@@ -229,7 +245,7 @@ li {
 
 /*MAIN AGENDAR TURNO*/
 #mainAgendar {
-  background-color: rgb(151, 150, 150);
+  background: linear-gradient(to right, rgb(151, 150, 150), rgb(0, 0, 0));
   background-size: cover;
   background-position: center;
   flex-direction: column;
@@ -299,6 +315,9 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+#footer .Redes a:hover {
+  transform: scale(1.2);
 }
 #footer .Redes img {
   width: 70px;

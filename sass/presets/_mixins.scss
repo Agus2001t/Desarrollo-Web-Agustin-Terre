@@ -1,0 +1,11 @@
+/*HICE UNO PARA MOSTRAR QUE SE ENTENDIO*/
+
+@mixin parrafo {
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: fit-content;
+}

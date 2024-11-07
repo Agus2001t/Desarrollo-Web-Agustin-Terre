@@ -43,6 +43,9 @@
         }
     }
     .Redes {
+        a:hover {
+            transform: scale(1.2);
+        }
         margin-right: 15px;
         display: flex;
         justify-content: space-around;

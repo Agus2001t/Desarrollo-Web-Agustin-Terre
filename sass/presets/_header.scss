@@ -8,6 +8,7 @@
 .LogoTitulo img {
     width: 65px;
     height: 65px;
+    animation: giro 7s infinite linear;
 }
 
 .LogoTitulo div {
@@ -26,4 +27,18 @@
 .LogoTitulo h2 {
     font-size: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*ANIMACION*/
+
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
