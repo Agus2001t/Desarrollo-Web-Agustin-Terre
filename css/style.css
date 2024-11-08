@@ -161,7 +161,8 @@ li {
 #mainPlan .GrillasMain .Objetivo1 p, #mainPlan .GrillasMain .Objetivo2 p, #mainPlan .GrillasMain .Objetivo3 p, #mainRutinas .GrillasMain .Objetivo1 p, #mainRutinas .GrillasMain .Objetivo2 p, #mainRutinas .GrillasMain .Objetivo3 p, #mainSedes .GrillasMain .Objetivo1 p, #mainSedes .GrillasMain .Objetivo2 p, #mainSedes .GrillasMain .Objetivo3 p {
   color: white;
   padding: 40px 20px;
-  font-size: 17px;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 #mainPlan .GrillasMain .Objetivo1, #mainRutinas .GrillasMain .Objetivo1, #mainSedes .GrillasMain .Objetivo1 {
   background-color: black;
@@ -199,7 +200,7 @@ li {
 }
 #mainPlan .GrillasMain .TextoRutina p, #mainRutinas .GrillasMain .TextoRutina p, #mainSedes .GrillasMain .TextoRutina p {
   color: white;
-  font-size: 22px;
+  font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: oblique;
   background-color: rgba(0, 0, 0, 0.6);
