@@ -10,6 +10,9 @@
     section {
         width: 100%;
     }
+
+/*SECCION LOGO, TITULO Y SUBTITULO*/
+
     .LogoTituloFooter {
         display: flex;
         div {
@@ -32,6 +35,9 @@
             height: 200px;
         }
     }
+
+/*SECCION COPYRIGHT*/
+
     .Copyright {
         margin-bottom: 30px;
         text-align: center;
@@ -42,6 +48,9 @@
             font-size: 15px;
         }
     }
+
+/*SECCION REDES*/
+
     .Redes {
         a:hover {
             transform: scale(1.2);

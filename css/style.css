@@ -71,6 +71,7 @@ li {
     transform: rotate(360deg);
   }
 }
+/*IMPORTACION DE OTROS ARCHIVOS SASS*/
 /*HICE UNO PARA MOSTRAR QUE SE ENTENDIO*/
 /*HICE UNA PARA MOSTRAR QUE SE ENTENDIO*/
 /*ESTILOS CONTENIDO*/
@@ -124,6 +125,8 @@ li {
   min-height: 100vh;
   width: 100%;
   display: flex;
+  /*ESTRUCTURA DE GRILLAS*/
+  /*ESTRUCTURA DE GRILLAS - SEDES*/
 }
 #mainPlan .GrillasMain, #mainRutinas .GrillasMain, #mainSedes .GrillasMain {
   display: grid;
@@ -131,6 +134,9 @@ li {
   grid-template-rows: repeat(2, 1fr);
   row-gap: 60px;
   column-gap: 20px;
+  /*FONDO*/
+  /*SECCION OBJETIVOS*/
+  /*FONDO RUTINA*/
 }
 #mainPlan .GrillasMain .ImagenAlimentos, #mainRutinas .GrillasMain .ImagenAlimentos, #mainSedes .GrillasMain .ImagenAlimentos {
   grid-column: 1/4;
@@ -213,6 +219,7 @@ li {
   grid-template-rows: repeat(2, 1fr);
   row-gap: 60px;
   column-gap: 20px;
+  /*SEDES*/
 }
 #mainPlan .GrillasSedes img, #mainRutinas .GrillasSedes img, #mainSedes .GrillasSedes img {
   width: 100%;
@@ -275,6 +282,9 @@ li {
   background-color: white;
   display: flex;
   border-top: black;
+  /*SECCION LOGO, TITULO Y SUBTITULO*/
+  /*SECCION COPYRIGHT*/
+  /*SECCION REDES*/
 }
 #footer section {
   width: 100%;
