@@ -1,3 +1,5 @@
+@import "mixins";
+
 /*DISEÑOS RESPONSIVE - INICIO*/
 
 @media (max-width: 920px) {
@@ -66,6 +68,18 @@
     }
 }
 
+@media (min-width: 1600px) {
+    #main {
+        .ParrafoMain p {
+            @include parrafo2
+        }
+        .ParteInferiorMain li {
+            padding: 80px;
+            font-size: 60px;
+        }
+    }
+}
+
 /*DISEÑOS RESPONSIVE - PLAN NUTRICIONAL - RUTINAS*/
 
 @media (max-width: 770px) {
@@ -82,6 +96,27 @@
                     padding: 20px 10px;
                     font-size: 15px;
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 1900px) {
+    #mainPlan, #mainRutinas {
+        .GrillasMain {
+            .TextoAlimentos p {
+                font-size: 40px;
+            }
+            .Objetivo1, .Objetivo2, .Objetivo3 {
+                h1 {
+                    font-size: 65px;
+                }
+                p {
+                    font-size: 45px;
+                }
+            }
+            .TextoRutina p {
+                font-size: 40px;
             }
         }
     }
@@ -133,5 +168,24 @@
 @media (max-width: 750px) {
     #mainAgendar {
         padding: 50px 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #mainAgendar {
+        padding: 50px 150px;
+        h2 {
+            font-size: 50px;
+        }
+        input {
+            font-size: 40px;
+        }
+        select {
+            font-size: 40px;
+        }
+        label {
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
     }
 }

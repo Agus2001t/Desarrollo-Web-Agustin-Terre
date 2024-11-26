@@ -21,7 +21,7 @@ li {
 #body {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -72,7 +72,7 @@ li {
   }
 }
 /*IMPORTACION DE OTROS ARCHIVOS SASS*/
-/*HICE UNO PARA MOSTRAR QUE SE ENTENDIO*/
+/*HICE ALGUNOS PARA MOSTRAR QUE SE ENTENDIO*/
 /*HICE UNA PARA MOSTRAR QUE SE ENTENDIO*/
 /*ESTILOS CONTENIDO*/
 #main {
@@ -335,6 +335,7 @@ li {
   height: 70px;
 }
 
+/*HICE ALGUNOS PARA MOSTRAR QUE SE ENTENDIO*/
 /*DISEÑOS RESPONSIVE - INICIO*/
 @media (max-width: 920px) {
   .ParteInferiorMain {
@@ -396,6 +397,21 @@ li {
     height: 40px;
   }
 }
+@media (min-width: 1600px) {
+  #main .ParrafoMain p {
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: oblique;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: fit-content;
+  }
+  #main .ParteInferiorMain li {
+    padding: 80px;
+    font-size: 60px;
+  }
+}
 /*DISEÑOS RESPONSIVE - PLAN NUTRICIONAL - RUTINAS*/
 @media (max-width: 770px) {
   #mainPlan .GrillasMain, #mainRutinas .GrillasMain {
@@ -411,6 +427,20 @@ li {
   #mainPlan .GrillasMain .Objetivo1 p, #mainPlan .GrillasMain .Objetivo2 p, #mainPlan .GrillasMain .Objetivo3 p, #mainRutinas .GrillasMain .Objetivo1 p, #mainRutinas .GrillasMain .Objetivo2 p, #mainRutinas .GrillasMain .Objetivo3 p {
     padding: 20px 10px;
     font-size: 15px;
+  }
+}
+@media (min-width: 1900px) {
+  #mainPlan .GrillasMain .TextoAlimentos p, #mainRutinas .GrillasMain .TextoAlimentos p {
+    font-size: 40px;
+  }
+  #mainPlan .GrillasMain .Objetivo1 h1, #mainPlan .GrillasMain .Objetivo2 h1, #mainPlan .GrillasMain .Objetivo3 h1, #mainRutinas .GrillasMain .Objetivo1 h1, #mainRutinas .GrillasMain .Objetivo2 h1, #mainRutinas .GrillasMain .Objetivo3 h1 {
+    font-size: 65px;
+  }
+  #mainPlan .GrillasMain .Objetivo1 p, #mainPlan .GrillasMain .Objetivo2 p, #mainPlan .GrillasMain .Objetivo3 p, #mainRutinas .GrillasMain .Objetivo1 p, #mainRutinas .GrillasMain .Objetivo2 p, #mainRutinas .GrillasMain .Objetivo3 p {
+    font-size: 45px;
+  }
+  #mainPlan .GrillasMain .TextoRutina p, #mainRutinas .GrillasMain .TextoRutina p {
+    font-size: 40px;
   }
 }
 /*DISEÑOS RESPONSIVE - NUESTRAS SEDES*/
@@ -453,6 +483,24 @@ li {
 @media (max-width: 750px) {
   #mainAgendar {
     padding: 50px 100px;
+  }
+}
+@media (min-width: 1400px) {
+  #mainAgendar {
+    padding: 50px 150px;
+  }
+  #mainAgendar h2 {
+    font-size: 50px;
+  }
+  #mainAgendar input {
+    font-size: 40px;
+  }
+  #mainAgendar select {
+    font-size: 40px;
+  }
+  #mainAgendar label {
+    margin-bottom: 10px;
+    font-size: 40px;
   }
 }
 
